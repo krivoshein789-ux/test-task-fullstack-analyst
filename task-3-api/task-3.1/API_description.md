@@ -43,7 +43,7 @@ confirmPassword:
   - must match password
   - Description: подтверждение пароля
 ## Выходные параметры при успешном ответе
-### 201 created
+### 201 Сreated
 ### Response Body
 userId
   - Type: integer
@@ -77,34 +77,34 @@ details
       - may contain multiple validation errors
   - Description: дополнительная информация об ошибках валидации
 ## Описание ошибок - коды ответов
-### 400 bad request
+### 400 Bad request
 Некорректные входные данные
 Возможные причины:
   - обязательные поля не заполнены
   - неверный email
   - пароль слишком короткий
   - Password и cofirmPassword не совпадают
-### 409 conflict
+### 409 Conflict
 Пользователь с таким Email уже существует
 ### 500 Internal Server Error
 Внутрення ошибка сервера
 
 ## Пример запроса
-JSON
+'''JSON
 {
   "firstName": "Ivan",
   "lastName": "Petrov",
   "email": "ivan.petrov@example.com",
   "password": "StrongPass123",
   "confirmPassword": "StrongPass123"
-}
+}'''
 
 ## Пример ответа
-JSON
+'''JSON
 { 
   "userId": 101, 
   "message": "User successfully registered" 
-}
+}'''
  
  
  
