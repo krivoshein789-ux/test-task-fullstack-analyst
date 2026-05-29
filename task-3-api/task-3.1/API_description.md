@@ -8,16 +8,19 @@ POST /api/users/register
 
 ## Входные данные
 ### Request body
+
 firstName
   - Type: string
   - Required: yes
   - Restrictions: maximum length 50 characters
   - Description: имя пользователя
+
 lastName
   - Type: string
   - Required: yes
   - Restrictions: maximum length 50 characters
   - Description: фамилия пользователя
+
 Email
   - Type: string
   - Required: yes
@@ -25,12 +28,14 @@ Email
       valid email format
       unique value
   - Description: email пользователя
+
 Password:
   - Type: string
   - Required: yes
   - Restrictions:
   - minimum length 8 characters
   - Description: пароль пользователя
+
 confirmPassword:
   - Type: string
   - Required: yes
@@ -44,6 +49,7 @@ userId
   - Type: integer
   - Required: yes
   - Description: уникальный идентификатор пользователя
+
 message
   - Type: string
   - Required: yes
@@ -56,12 +62,14 @@ errorCode
       - uppercase format
       - snake_case
   - Description: код ошибки
+
 message
   - Type: string
   - Required: yes
   - Restrictions:
     - maximum length 255 characters
   - Description: описание ошибки
+
 details
   - Type: array of strings
   - Required: no
