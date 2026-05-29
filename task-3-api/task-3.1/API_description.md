@@ -90,26 +90,21 @@ details
 Внутрення ошибка сервера
 
 ## Пример запроса
-'''JSON
+```JSON
 {
   "firstName": "Ivan",
   "lastName": "Petrov",
   "email": "ivan.petrov@example.com",
   "password": "StrongPass123",
   "confirmPassword": "StrongPass123"
-}'''
+}
+```
 
 ## Пример ответа
-'''JSON
+```JSON
 { 
   "userId": 101, 
   "message": "User successfully registered" 
-}'''
+}
+```
  
- 
- 
- 
- 
- 
- Пример ответа
-;
